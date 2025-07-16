@@ -5,5 +5,5 @@ export class Teacher {
   email!: string;
   phone?: string;
   speciality!: string;
-  hiring_date!: string;
+  hiring_date!: string;
 }

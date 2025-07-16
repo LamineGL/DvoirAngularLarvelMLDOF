@@ -4,6 +4,9 @@
 <!-- Bouton pour ajouter un nouvel enseignant -->
 <a routerLink="/addTeacher" class="btn btn-success mb-3">Ajouter un enseignant</a>
 
+<div *ngIf="teachers.length === 0" class="text-danger mb-2">
+  Aucun enseignant n’a été trouvé ou la récupération a échoué.
+</div>
 <!-- Tableau d'affichage -->
 <table class="table table-bordered">
   <thead class="table-light">

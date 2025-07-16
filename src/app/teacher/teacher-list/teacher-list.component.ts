@@ -44,14 +44,13 @@ export class TeacherListComponent implements OnInit {
       },
       (error) => {
         console.error('Erreur lors du chargement des enseignants :', error);
-      }
-    );
-  }
+      });
+  }
 
   deleteTeacher(id: number): void {
     this.teacherService.deleteTeacher(id).subscribe(
       () => this.getAll(),
       error => console.error(error)
-    );
-  }
+    );
+  }
 }
