@@ -1,10 +1,11 @@
+import { environment } from '../../environments/environnement';
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Teacher } from '../models/teacher';
 
 @Injectable({ providedIn: 'root' })
 export class TeacherService {
-  private URL = 'https://621577d3076a.ngrok-free.app/api/v1/teachers';
+  private URL = environment.apiUrl;
 
   private headers = new HttpHeaders({
     'ngrok-skip-browser-warning': 'true'
